@@ -1,0 +1,325 @@
+.kontaktParent {
+  width: 90vw;
+  position: relative;
+  left: 5vw;
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kontaktParent h1 {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.kontaktCards {
+  width: 75%;
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  white-space: normal;
+  position: relative;
+}
+
+.kontaktCard {
+  width: calc(33.3vw - 1.25rem);
+  margin: 1.25rem;
+  aspect-ratio: 3/4;
+  border-radius: 50px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kontaktCard img {
+  margin-top: 3.75rem;
+}
+
+.kontaktCard h3 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.kontaktCard p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.kontaktBottom {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.kontaktLeft {
+  width: calc(65% - 1rem);
+  border-radius: 50px;
+  height: 70vh;
+  background: #146140;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "heading heading"
+    "text button";
+}
+
+.kontaktLeft h1 {
+  font-size: 80px;
+  font-weight: 700;
+  text-align: start;
+  color: #f7f7f7;
+  grid-area: heading;
+}
+
+.kontaktLeft p {
+  font-size: 24px;
+  font-weight: 200;
+  color: #f7f7f7;
+  grid-area: text;
+}
+
+.kontaktLeft button {
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 20px 0 20px 20px;
+  transform: translateY(230%);
+  cursor: pointer;
+  height: 30%;
+  grid-area: button;
+}
+
+.kontaktLeft button p {
+  color: #146140;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: -32px;
+}
+
+.kontaktLeft button::before {
+  content: "";
+  display: block;
+  background-color: #f7f7f7;
+  position: relative;
+  left: calc(100% - 30%);
+  top: -55%;
+  width: 30%;
+  height: 50%;
+  border-radius: 20px 20px 0 0;
+}
+
+.kontaktForm {
+  width: calc(65% - 1rem);
+  border-radius: 50px;
+  height: 70vh;
+  background: #f7f7f7;
+  padding: 3rem;
+}
+
+.kontaktForm h2 {
+  font-size: 48px;
+  font-weight: 550;
+  color: #064c32;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  width: 60%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #064c3280;
+  margin-top: 2.5rem;
+  font-size: 20px;
+  padding-left: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.inputs input::placeholder {
+  color: #064c3280;
+}
+
+.inputPoruka {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputPoruka label {
+  font-size: 20px;
+  font-weight: 700;
+  color: #064c32;
+  margin-top: 1rem;
+  margin-left: 0.75rem;
+}
+
+.inputPoruka textarea {
+  background-color: transparent;
+  width: 30vw;
+  border: 1px solid #064c32;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  font-size: 16px;
+  padding: 1.25rem;
+  resize: none;
+}
+
+.inputPoruka textarea::placeholder {
+  color: #064c3280;
+}
+
+.bottomPart button {
+  width: 30%;
+  aspect-ratio: 3.5/1;
+  background-color: #064c32;
+  border-radius: 20px;
+  color: #f7f7f7;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.kontaktLeft,
+.kontaktForm {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.bottomPart {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.kontaktRight {
+  width: calc(35% - 1rem);
+  border-radius: 50px;
+  height: 70vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  .kontaktLeft h1 {
+    font-size: 64px;
+  }
+  .kontaktLeft p {
+    font-size: 20px;
+  }
+  .kontaktLeft {
+    grid-template-rows: 1fr 2fr;
+    width: 100%;
+  }
+  .kontaktRight {
+    display: none;
+  }
+  .kontaktLeft button {
+    height: 25%;
+    transform: translateY(300%);
+  }
+  .kontaktCards {
+    width: 95vw;
+  }
+  .kontaktCard {
+    width: calc((95vw / 3) - 1.25rem);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .kontaktForm {
+    width: 90vw;
+  }
+  .kontaktLeft h1 {
+    font-size: 5rem;
+  }
+  .kontaktLeft p {
+    font-size: 28px;
+  }
+  .kontaktLeft button {
+    width: 150%;
+    transform: translate(-30%, 300%);
+  }
+  .kontaktLeft button p {
+    font-size: 28px;
+    margin-top: -48px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .kontaktLeft {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1.2fr 3.4fr 1fr !important;
+    grid-template-areas: 
+      "heading" 
+      "text" 
+      "button";
+    height: auto;
+    width: 100%;
+  }
+  .kontaktLeft button {
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+  .kontaktLeft h1 {
+    font-size: 32px;
+  }
+  .kontaktLeft * {
+    padding: 0.75rem 0;
+  }
+  .kontaktCards {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100vw;
+  }
+  .kontaktCard {
+    width: 65vw;
+    flex: 0 0 auto;
+    aspect-ratio: 1/1.4;
+    margin: .75rem;
+  }
+  .kontaktCard:first-child {
+    margin-left: 2.5rem;
+  }
+  .kontaktCard:last-child {
+    margin-right: 2.5rem;
+  }
+  .kontaktCards::-webkit-scrollbar {
+    display: none;
+  }
+  .bottomPart {
+    flex-direction: column;
+  }
+  .kontaktForm input,
+  .kontaktForm textarea,
+  .bottomPart button {
+    width: calc(90vw - 6rem);
+  }
+  .bottomPart button {
+    height: 60px;
+    margin-top: 2rem;
+  }
+  .kontaktForm {
+    height: auto;
+  }
+}

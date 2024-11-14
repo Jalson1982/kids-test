@@ -1,0 +1,187 @@
+.aktivniContainer {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18rem;
+}
+
+.aktivniWrapper {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aktivniTitle {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 0;
+}
+
+.aktivniTitle h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.aktivniTitle p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.aktivniCardsWrapper {
+  width: 100vw;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.aktivniCards {
+  width: 90%;
+  height: 100%;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  position: relative;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  gap: 3px;
+}
+
+.aktivniCard {
+  width: 20vw;
+  aspect-ratio: 1/1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.aktivniCards::-webkit-scrollbar {
+  display: none;
+}
+
+.aktivniCard img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.aktivnitxtWrap {
+  width: 80%;
+  height: 85%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.aktivnitxt h1 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.aktivnitxt p {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.ac1 {
+  border-radius: 100px 0px 100px 0px !important;
+}
+.ac2 {
+  border-radius: 0px 100px 100px 0px;
+}
+.ac3 {
+  border-radius: 100px 100px 100px 0px;
+}
+.ac4 {
+  border-radius: 0px 100px 0px 100px;
+}
+.ac1 img {
+  border-radius: 100px 0px 100px 0px !important;
+}
+.ac2 img {
+  border-radius: 0px 100px 100px 0px;
+}
+.ac3 img {
+  border-radius: 100px 100px 100px 0px;
+}
+.ac4 img {
+  border-radius: 0px 100px 0px 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+ 
+  .aktivniContainer {
+    height: 50vh;
+  }
+  .aktivniWrapper{
+    height: 100%;
+  }
+  .aktivniTitle h1{
+    font-size: 52px;
+  }
+  .aktivniTitle p{
+    font-size: 16px;
+  }
+  .aktivniCard {
+    width: 31%;
+  }
+  .aktivniCardsWrapper {
+    margin-bottom: 40rem;
+  }
+  .aktivnitxt h1{
+    font-size: 17.06px;
+  }
+  .aktivnitxt p{
+    font-size: 10.23px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .aktivniContainer {
+    height: 60vh;
+  }
+  .aktivniCard {
+    width: 45%;
+
+  }
+  .aktivniTitle{
+    width: 77%;
+    text-align: center;
+  }
+  .aktivniTitle h1{
+    font-size: 36px;
+  }
+  .aktivniTitle p{
+    font-size: 14px;
+  }
+  .aktivnitxt h1{
+    font-size: 17.06px;
+  }
+  .aktivnitxt p{
+    font-size: 10.23px;
+  }
+  .aktivnitxt{
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+}

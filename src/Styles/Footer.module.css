@@ -1,0 +1,84 @@
+.footer {
+  width: 100vw;
+  background: #146140;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.footer .left h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.73px;
+  text-align: left;
+}
+
+.footer .left p {
+  color: #f7f7f7;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.36px;
+  text-align: left;
+  margin: 1.5rem 0;
+}
+
+.socials a {
+  margin: 0 0.65rem;
+}
+
+.footer .right div h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.footer .right div p,
+.footer .right div ul li,
+.footer .right div ul li a {
+  color: #f7f7f7;
+  margin: 0.75rem 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+}
+
+.footer .right div {
+  margin: 0 2rem;
+}
+
+.footer .left,
+.footer .right {
+  width: 25%;
+  margin: 2rem 4rem;
+}
+
+.footer .right {
+  display: flex;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer .left,
+  .footer .right {
+    width: 45%;
+    margin: 2rem 4rem 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer .left,
+  .footer .right {
+    width: 100%;
+    margin: 02rem 0;
+  }
+  .footer .right div:first-child {
+    margin-left: 0;
+  }
+}

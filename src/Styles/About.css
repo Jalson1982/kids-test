@@ -1,0 +1,234 @@
+.o-nama {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.o-nama-wrapper {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.o-nama-img {
+  width: calc(30% - 2rem);
+  height: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.o-nama-text {
+  width: 70%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.o-nama-title h1 {
+  font-size: 48px;
+}
+
+.o-nama-paragraph {
+  width: 75%;
+  height: 20%;
+}
+
+.o-nama-paragraph p {
+  font-size: 24px;
+  color: black;
+}
+
+.cards {
+  width: 70%;
+  height: 55%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 29%;
+  height: 73%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card img {
+  margin: 0;
+  z-index: 2;
+}
+
+.card svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.card path {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card-txt {
+  width: 80%;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.card h1 {
+  font-size: 24px;
+  color: black;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: black;
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .o-nama {
+    width: 95%;
+    height: 42vh;
+  }
+
+  .o-nama-img {
+    width: 30%;
+  }
+
+  .o-nama-text {
+    width: 68%;
+    justify-content: center;
+  }
+
+  .o-nama-title h1 {
+    font-size: 32px;
+  }
+ .o-nama-paragraph{
+  height: 35%;
+ }
+  .o-nama-paragraph p {
+    font-size: 18px;
+    color: black;
+  }
+ .cards{
+  height:50%;
+ }
+  .card h1 {
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+  }
+  .card img{
+    width: 17.45px;
+    height: 20px;
+  }
+
+  .card h2 {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+  }
+
+  .card {
+   height: 100%;
+    justify-content: center;
+  }
+
+  .card-txt {
+    padding-top: 0;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .o-nama {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .o-nama-wrapper {
+    flex-direction: column;
+  }
+
+  .o-nama-img {
+    width: 95%;
+    height: 30%;
+    border-radius: 20px;
+  }
+
+  .o-nama-text {
+    width: 95%;
+    height: 65%;
+  }
+
+  .o-nama-title h1 {
+    font-size: 24px;
+  }
+  .o-nama-paragraph {
+    display: flex;
+    height: 40%;
+    align-items: flex-end;
+  }
+
+  .o-nama-paragraph p {
+    font-size: 14px;
+    color: black;
+  }
+
+  .card h1 {
+    font-size: 14px;
+    color: black;
+  }
+
+  .card h2 {
+    font-size: 12px;
+    color: black;
+  }
+
+  .cards {
+    width: 90%;
+    height: 40%;
+    align-items: flex-end;
+  }
+  .card {
+    width: 30%;
+    height: 95%;
+    justify-content: center !important;
+  }
+  .card-txt {
+    justify-content: center;
+  }
+  .o-nama-text {
+    justify-content: space-evenly;
+  }
+
+  .card img {
+    width: 18.3px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,101 @@
+.usluge h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.45px;
+  text-align: center;
+  margin: 6rem 0 0.75rem 0;
+}
+
+.usluge p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.2px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.uslugeWrapper {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 5vw;
+}
+
+.usluga {
+  width: 25%;
+  aspect-ratio: 3/4;
+  background: #f7f7f7;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.875rem;
+}
+
+.usluga:first-child {
+  margin-left: 0;
+}
+
+.usluga:last-child {
+  margin-right: 0;
+}
+
+.usluga img {
+  margin-top: 60px;
+}
+
+.usluga h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.73px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.usluga p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.2px;
+  text-align: center;
+  margin-top: 1.75rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .uslugeWrapper {
+    width: 95vw;
+    left: 2.5vw;
+  }
+  .usluga {
+    padding: 1rem;
+  }
+  .usluga img {
+    width: 58px;
+    height: 58px;
+    margin-top: 2.75rem;
+  }
+  .usluga h3 {
+    margin-top: 1.25rem;
+  }
+  .usluga p {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .uslugeWrapper {
+    width: 95vw;
+    left: 2.5vw;
+    flex-wrap: wrap;
+  }
+  .usluga {
+    width: calc(50% - 2rem);
+  }
+  .usluga:nth-child(even) {
+    margin-right: 0;
+  }
+  .usluga:nth-child(odd) {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,193 @@
+.home {
+  margin-top: 160px;
+  height: 80vh;
+  width: 90vw;
+  position: relative;
+  left: 5vw;
+  display: flex;
+  margin-bottom: 6rem;
+}
+
+.wrapper {
+  display: flex;
+  width: calc(30% + 1rem);
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.first {
+  width: 100%;
+  height: 40vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  border-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.first p:first-child,
+.second p:first-child {
+  color: #000;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.first h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.first p:last-child {
+  font-size: 24px;
+  font-weight: 250;
+  width: 80%;
+}
+
+.second {
+  width: calc(100% - 1rem);
+  height: 40vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  border-radius: 50px;
+}
+
+.second h3 {
+  font-size: 32px;
+  font-weight: 700;
+  width: 60%;
+}
+
+.third {
+  width: 70%;
+  padding: 2rem;
+  border-radius: 50px;
+  border-top-left-radius: 0;
+  background-color: #f7f7f7;
+}
+
+.third h1 {
+  font-size: 80px;
+}
+
+.third .image {
+  margin-top: 1rem;
+  height: calc(70% - 1rem);
+  border-radius: 30px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.third .contactButton {
+  display: none;
+}
+
+.contactButton {
+  width: 100%;
+  background-color: #146140;
+  border: none !important;
+  padding: 1rem;
+  color: #f7f7f7;
+  border-radius: 30px;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .first p:first-child {
+    font-size: 16px;
+  }
+  .first h1 {
+    font-size: 52px;
+  }
+  .first p:last-child {
+    font-size: 20px;
+  }
+  .second p:first-child {
+    font-size: 20px;
+  }
+  .second h3 {
+    font-size: 24px;
+  }
+  .third h1 {
+    font-size: 52px;
+  }
+  .contactButton {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    margin-top: 90px;
+    height: 90vh;
+    flex-direction: column;
+  }
+  .wrapper {
+    flex-direction: row;
+    width: 100%;
+  }
+  .first,
+  .second {
+    width: calc(100% - 0.5rem);
+    border-radius: 30px;
+    padding: 1rem;
+  }
+  .first {
+    height: calc(30vh - 1rem);
+  }
+  .first p:first-child,
+  .first p:last-child {
+    font-size: 12px;
+    width: 100%;
+  }
+  .first h1 {
+    font-size: 36px;
+  }
+  .second {
+    height: 30vh;
+    align-items: end;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .second p:first-child {
+    font-size: 12px;
+    text-align: end;
+  }
+  .second h3 {
+    font-size: 20px;
+    text-align: end;
+    width: 80%;
+  }
+  .second .contactButton {
+    display: none;
+  }
+  .third {
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    width: 100%;
+    height: 60vh;
+    padding: 1rem;
+  }
+  .third h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .third .image {
+    margin-bottom: 1rem;
+    height: calc(70% - 2rem);
+  }
+  .third .contactButton {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .third h1 {
+    font-size: 1.5rem;
+  }
+}
